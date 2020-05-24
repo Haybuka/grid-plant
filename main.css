@@ -108,7 +108,7 @@ nav a {
 section {
     grid-row: 3/4;
     grid-column: 1/13;
-    background-color: #d7e1dc;
+    background-color: hsl(150, 14%, 86%);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding: 10px;
@@ -139,13 +139,14 @@ section #secLeft span {
     margin: 5px 0;
 }
 
-section #secLeft button {
+.btn {
     background-color: transparent;
     border: none;
     padding: 5px 20px;
     border-bottom: 1px solid black;
-    box-shadow: 1px 2px 10px 3px rgba(128, 128, 128, 0.3);
+    /* box-shadow: 1px 2px 10px 3px rgba(128, 128, 128, 0.3); */
     cursor: pointer;
+    margin: 15px auto;
 }
 
 section #secRight {
@@ -158,6 +159,8 @@ section #secRight {
 section #secRight ul {
     padding: 0;
     margin: 0;
+    position: relative;
+    bottom: -120px;
 }
 
 section #secRight li {
@@ -168,28 +171,145 @@ section #secRight li {
 
 article#first {
     grid-row: 4/5;
+    grid-column: 1/13;
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 5px;
+    overflow: hidden;
 }
+
+article#first #philAside {
+    grid-column: 1/6;
+    text-align: center;
+    word-spacing: 1.5em;
+    line-height: 2em;
+    padding: 20px;
+    margin-top: 55px;
+}
+
+article#first #philImage {
+    background-color: #eee;
+    grid-column: 7/13;
+}
+
+article#first #philImage img {
+    height: 400px;
+    width: 400px;
+}
+
 
 article#second {
     grid-row: 5/6;
+    grid-column: 1/13;
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 5px;
+    overflow: hidden;
 }
+
+article#second #olivImage {
+    background-color: #eee;
+    grid-column: 1/7;
+}
+
+article#second #olivAside {
+    grid-column: 7/13;
+    text-align: center;
+    word-spacing: 1.5em;
+    line-height: 2em;
+    padding: 20px;
+    margin-top: 55px;
+}
+
+article#second #olivImage img {
+    height: 400px;
+    width: 400px;
+}
+
 
 article#third {
     grid-row: 6/7;
+    grid-column: 1/13;
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 5px;
+    overflow: hidden;
+}
+
+article#third #graceAside {
+    grid-column: 1/7;
+    text-align: center;
+    word-spacing: 1.5em;
+    line-height: 2em;
+    padding: 20px;
+    margin-top: 55px;
+}
+
+article#third aside#graceImage {
+    background-color: #eee;
+    grid-column: 7/13;
+}
+
+article#third #graceImage img {
+    height: 400px;
+    width: 400px;
 }
 
 footer {
     grid-row: 7/8;
+    grid-column: 1/13;
     background-color: #fbfbfb;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 50px;
+}
+
+footer ul#links {
+    padding: 0;
+    margin: 0;
+    grid-column: 1/6;
+}
+
+footer ul#links li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+footer ul#links li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+footer ul#footerNav {
+    padding: 0;
+    margin: 0;
+    grid-column: 9/13;
+}
+
+footer ul#footerNav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+footer ul#footerNav ul {
+    color: black;
+    text-decoration: none;
+
+}
+
+#attribution {
+    grid-column: 6/10;
+}
+
+#attribution i {
+    color: rgb(168, 5, 5);
 }
