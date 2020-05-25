@@ -9,6 +9,39 @@ body {
     font-family: 'Mada';
 }
 
+.coming {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    padding: 50px 30px;
+    background-color: #e6e8e5;
+    border-radius: 15px;
+    display: none;
+    transition: 10s;
+}
+
+#coming:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.comingView {
+    display: block;
+}
+
+.clearComing {
+    position: relative;
+    opacity: 0.7;
+    top: -20px;
+    font-size: 32px;
+    text-align: center;
+    width: 50px;
+
+    font-weight: light;
+    cursor: pointer;
+}
+
 #wrapper {
     max-width: 960px;
     width: 100%;
@@ -119,6 +152,7 @@ nav a {
 
 #banner ul li {
     list-style-type: none;
+    /* border-bottom: 1px solid rgb(68, 65, 65); */
 }
 
 #banner li span {
