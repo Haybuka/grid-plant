@@ -685,7 +685,6 @@ footer ul#footerNav ul {
     }
 
     article#first #philImage {
-        background-color: #eee;
         grid-column: 1/6;
         grid-row: 1/2;
     }
@@ -696,6 +695,7 @@ footer ul#footerNav ul {
     }
 
     article#second #olivImage {
+        background-color: transparent;
         grid-column: 7/13;
     }
 
@@ -742,6 +742,7 @@ footer ul#footerNav ul {
         grid-column: 1/7;
         grid-row: 1/2;
         background-image: none;
+        background-color: transparent;
     }
 
     article#third #graceImage img {
@@ -762,7 +763,7 @@ footer ul#footerNav ul {
 
     footer ul#links {
         padding: 0;
-        margin: 10px 0;
+        margin: 15px 0;
         grid-column: 5/13;
         grid-row: 2/3;
     }
