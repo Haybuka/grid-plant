@@ -12,7 +12,7 @@ body {
 #wrapper {
     max-width: 960px;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -80,6 +80,7 @@ nav a {
     margin-left: 30px;
 }
 
+
 #banner ul#bannerLeft h1 {
     font-size: 4em;
     font-weight: normal;
@@ -90,7 +91,13 @@ nav a {
     grid-column: 6/13;
     background-color: #eee;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    text-align: right;
+}
+
+#banner ul#bannerRight a {
+    text-decoration: none;
+    color: black;
 }
 
 #banner ul li {
@@ -156,11 +163,16 @@ section #secRight {
     margin-left: 30px;
 }
 
+section #secRight img {
+    width: 300px;
+    height: 300px;
+}
+
 section #secRight ul {
     padding: 0;
     margin: 0;
     position: relative;
-    bottom: -120px;
+    bottom: -150px;
 }
 
 section #secRight li {
@@ -290,13 +302,13 @@ footer ul#links li a {
 footer ul#footerNav {
     padding: 0;
     margin: 0;
-    grid-column: 9/13;
+    grid-column: 8/12;
 }
 
 footer ul#footerNav li {
     list-style-type: none;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
