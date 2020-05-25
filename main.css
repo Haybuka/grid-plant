@@ -7,6 +7,7 @@ body {
     width: 1200px;
     max-width: 100%;
     font-family: 'Mada';
+    overflow: hidden;
 }
 
 .coming {
@@ -17,7 +18,7 @@ body {
     background-color: #e6e8e5;
     border-radius: 15px;
     display: none;
-    transition: 10s;
+    transition: all 10s;
 }
 
 #coming:after {
@@ -34,10 +35,9 @@ body {
     position: relative;
     opacity: 0.7;
     top: -20px;
+    left: -650px;
     font-size: 32px;
     text-align: center;
-    width: 50px;
-
     font-weight: light;
     cursor: pointer;
 }
@@ -871,6 +871,14 @@ footer ul#footerNav ul {
         padding: 0;
         border-bottom: 1px solid black;
         cursor: pointer;
+    }
+
+    .clearComing {
+        position: relative;
+        display: block;
+        opacity: 0.7;
+        top: -20px;
+        left: -200px;
     }
 
     footer ul#footerNav ul {
