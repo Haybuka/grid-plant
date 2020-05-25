@@ -614,6 +614,7 @@ footer ul#footerNav ul {
 
     section #secLeft p {
         line-height: 1em;
+        display: none;
     }
 
     section #secLeft h3 {
@@ -679,6 +680,10 @@ footer ul#footerNav ul {
         margin-top: 30px;
     }
 
+    article#first #philAside small {
+        display: none;
+    }
+
     article#first #philImage {
         background-color: #eee;
         grid-column: 1/6;
@@ -699,6 +704,10 @@ footer ul#footerNav ul {
         grid-row: 1/2;
         padding: 5px;
         margin-top: 30px;
+    }
+
+    article#second #olivAside p {
+        display: none;
     }
 
     article#second #olivImage img {
@@ -723,6 +732,11 @@ footer ul#footerNav ul {
         padding: 5px;
         margin-top: 30px;
     }
+
+    article#third #graceAside p {
+        display: none;
+    }
+
 
     article#third aside#graceImage {
         grid-column: 1/7;
